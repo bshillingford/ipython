@@ -102,15 +102,15 @@ define([
 
     KeyboardManager.prototype.get_default_edit_shortcuts = function() {
         var that = this;
-        return {
+        return { /*
             'esc' : {
-                help    : 'command mode',
+                help    : 'command mode (DISABLED)',
                 help_index : 'aa',
                 handler : function (event) {
-                    that.notebook.command_mode();
-                    return false;
+                    //that.notebook.command_mode();
+                    //return false;
                 }
-            },
+            }, */
             'ctrl-m' : {
                 help    : 'command mode',
                 help_index : 'ab',
@@ -490,11 +490,6 @@ define([
         }
         
         if (!this.enabled) {
-            if (event.which === keycodes.esc) {
-                // ESC
-                notebook.command_mode();
-                return false;
-            }
             return true;
         }
         

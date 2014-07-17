@@ -102,6 +102,7 @@ define([
             },
             mode: 'ipython',
             theme: 'ipython',
+            keyMap: 'vim',
             matchBrackets: true,
              // don't auto-close strings because of CodeMirror #2385
             autoCloseBrackets: "()[]{}"
